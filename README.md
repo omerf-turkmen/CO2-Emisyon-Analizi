@@ -49,4 +49,4 @@ Projeyi bilgisayarınızda çalıştırmak için:
 
 1. Repoyu klonlayın:
    ```bash
-   git clone [https://github.com/omerf-turkmen/co2-emisyon-tahmini.git](https://github.com/kullanici_adiniz/co2-emisyon-tahmini.git)
+   git clone [https://github.com/omerf-turkmen/co2-emisyon-tahmini.git](https://github.com/omerf-turkmen/co2-emisyon-tahmini.git)
