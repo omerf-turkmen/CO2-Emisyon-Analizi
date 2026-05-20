@@ -47,6 +47,10 @@ Bu çalışmada elde edilen sonuçlar, literatürdeki benzer CO2 emisyon tahmini
 
 Projeyi bilgisayarınızda çalıştırmak için:
 
+## 🚀 Nasıl Çalıştırılır?
+
+Projeyi bilgisayarınızda çalıştırmak için:
+
 1. Repoyu klonlayın:
    ```bash
-   git clone [https://github.com/omerf-turkmen/co2-emisyon-tahmini.git](https://github.com/omerf-turkmen/co2-emisyon-tahmini.git)
+   git clone [https://github.com/omerfarukturkmen/Kanada-Arac-Veri-Seti-ile-CO2-Emisyon-Tahmini.git](https://github.com/omerfarukturkmen/Kanada-Arac-Veri-Seti-ile-CO2-Emisyon-Tahmini.git)
