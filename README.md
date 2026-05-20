@@ -15,8 +15,10 @@ Yüksek R² ve düşük RMSE değerlerine sahip sağlam bir regresyon modeli gel
 ## 🧠 Analiz ve Modelleme İş Akışı
 
 1. **Keşifçi Veri Analizi (EDA):** Veri setinde eksik değere rastlanmamıştır. Hedef değişken ile en yüksek korelasyona sahip özelliğin karma yakıt tüketimi (`fuel_consumption_comb_l_100_km` -> 0.916) olduğu tespit edilmiştir.
-2. **Çoklu Doğrusal Bağlantı (Multicollinearity) Kontrolü:** * **VIF (Variance Inflation Factor)** analizi sonucunda silindir sayısı (68.87) ve motor hacmi (45.80) gibi değişkenlerde VIF > 10 bulunarak yüksek çoklu doğrusal bağlantı tespit edilmiştir.
-3. **Özellik Seçimi ve Düzenlileştirme:** * LassoCV (optimal alpha: 0.0544) kullanılarak 3 özellik modelden tamamen düşürülmüş (sıfırlanmış) ve en anlamlı 26 özellik ile yola devam edilmiştir.
+2. **Çoklu Doğrusal Bağlantı (Multicollinearity) Kontrolü:**
+   * **VIF (Variance Inflation Factor)** analizi sonucunda silindir sayısı (68.87) ve motor hacmi (45.80) gibi değişkenlerde VIF > 10 bulunarak yüksek çoklu doğrusal bağlantı tespit edilmiştir.
+3. **Özellik Seçimi ve Düzenlileştirme:**
+   * LassoCV (optimal alpha: 0.0544) kullanılarak 3 özellik modelden tamamen düşürülmüş (sıfırlanmış) ve en anlamlı 26 özellik ile yola devam edilmiştir.
 4. **Modelleme:** Temel regresyon modellerinden ağaç tabanlı topluluk modellerine kadar çeşitli algoritmalar test edilmiştir.
 
 ## 📊 Sonuçlar ve Model Performansları
@@ -24,9 +26,9 @@ Yüksek R² ve düşük RMSE değerlerine sahip sağlam bir regresyon modeli gel
 Yapılan testler sonucunda en düşük hata payını (RMSE) Polinom (Derece 2) destekli Lineer Regresyon sağlarken, hiperparametre optimizasyonu yapılmış (tuned) ağaç tabanlı modeller de literatürle yarışır düzeyde yüksek performans göstermiştir.
 
 **Hiperparametre Optimizasyonlu Modeller:**
-* **HistGradientBoosting (Tuned):** Test R² Skoru: 0.9958 | Test RMSE: 3.88 g/km
-* **Gradient Boosting:** Test R² Skoru: 0.9975 | Test RMSE: 3.00 g/km
 * **Poly(2) + Linear Reg.:** Test R² Skoru: 0.9976 | Test RMSE: 2.93 g/km
+* **Gradient Boosting:** Test R² Skoru: 0.9975 | Test RMSE: 3.00 g/km
+* **HistGradientBoosting (Tuned):** Test R² Skoru: 0.9958 | Test RMSE: 3.88 g/km
 
 **Özellik Önemi (Feature Importance):**
 Modele en büyük katkıyı sağlayan özellik **~%93.3** ağırlık ile karma yakıt tüketimi (`fuel_consumption_comb_l_100_km`) olmuştur. Onu co2_factor ve yakıt tipi (E) takip etmektedir.
@@ -47,16 +49,12 @@ Bu çalışmada elde edilen sonuçlar, literatürdeki benzer CO2 emisyon tahmini
 
 Projeyi bilgisayarınızda çalıştırmak için:
 
-## 🚀 Nasıl Çalıştırılır?
-
-Projeyi bilgisayarınızda çalıştırmak için:
-
 1. Repoyu klonlayın:
    ```bash
-   git clone [https://github.com/omerfarukturkmen/Kanada-Arac-Veri-Seti-ile-CO2-Emisyon-Tahmini.git](https://github.com/omerfarukturkmen/Kanada-Arac-Veri-Seti-ile-CO2-Emisyon-Tahmini.git)
+   git clone https://github.com/omerfarukturkmen/Kanada-Arac-Veri-Seti-ile-CO2-Emisyon-Tahmini.git
 
-2. Gerekli kütüphaneleri yükleyin:
-```bash
+Gerekli kütüphaneleri yükleyin:
+
+ ```Bash
 pip install pandas numpy matplotlib seaborn scikit-learn statsmodels
-
 Jupyter Notebook'u başlatın ve CO2 analysis.ipynb dosyasını çalıştırın.
