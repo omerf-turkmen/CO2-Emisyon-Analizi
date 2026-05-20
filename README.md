@@ -54,3 +54,9 @@ Projeyi bilgisayarınızda çalıştırmak için:
 1. Repoyu klonlayın:
    ```bash
    git clone [https://github.com/omerfarukturkmen/Kanada-Arac-Veri-Seti-ile-CO2-Emisyon-Tahmini.git](https://github.com/omerfarukturkmen/Kanada-Arac-Veri-Seti-ile-CO2-Emisyon-Tahmini.git)
+
+2. Gerekli kütüphaneleri yükleyin:
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn statsmodels
+
+Jupyter Notebook'u başlatın ve CO2 analysis.ipynb dosyasını çalıştırın.
