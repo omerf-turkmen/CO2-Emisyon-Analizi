@@ -57,4 +57,3 @@ Gerekli kütüphaneleri yükleyin:
 
  ```Bash
 pip install pandas numpy matplotlib seaborn scikit-learn statsmodels
-Jupyter Notebook'u başlatın ve CO2 analysis.ipynb dosyasını çalıştırın.
